@@ -195,7 +195,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &113011370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,13 +208,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6a51660826c443b6a2845ec53df10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  layer:
-    serializedVersion: 2
-    m_Bits: 8
+  attackForce: 3
+  backForce: 3
+  movementSpeed: 4
+  maxScale: 8
   checkIsGround: 0
   isDestroyed: 0
   score: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!23 &113011371
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -272,7 +275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113011366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.69, y: 0.729, z: 8.94}
+  m_LocalPosition: {x: 15.3, y: 0.729, z: 18.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -363,11 +366,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
+  maximumVelocity: 5
   rotationSpeed: 7
-  lerp: 2
   maxScale: 8
   attackForce: 7
   killedEnemyScore: 1000
+  backForce: 3
   layer:
     serializedVersion: 2
     m_Bits: 8
@@ -459,7 +463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147449316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.11, y: 0.578, z: -13.05}
+  m_LocalPosition: {x: 4.4, y: 0.578, z: -5.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1459429400}
@@ -706,7 +710,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &681108741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,13 +723,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6a51660826c443b6a2845ec53df10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  layer:
-    serializedVersion: 2
-    m_Bits: 8
+  attackForce: 3
+  backForce: 3
+  movementSpeed: 4
+  maxScale: 8
   checkIsGround: 0
   isDestroyed: 0
   score: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!23 &681108742
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -783,7 +790,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681108737}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.9, y: 0.729, z: 10.3}
+  m_LocalPosition: {x: -22, y: 0.729, z: 9.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -954,7 +961,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &722500982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,13 +974,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6a51660826c443b6a2845ec53df10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  layer:
-    serializedVersion: 2
-    m_Bits: 8
+  attackForce: 3
+  backForce: 3
+  movementSpeed: 4
+  maxScale: 8
   checkIsGround: 0
   isDestroyed: 0
   score: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!23 &722500983
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1031,7 +1041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722500978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.81, y: 0.729, z: -3.7}
+  m_LocalPosition: {x: 25.54, y: 0.729, z: -6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1114,8 +1124,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.25969163, y: 0.7402467, z: -0.44403738, w: -0.4329271}
-  m_LocalPosition: {x: 5.573897, y: 15.970184, z: -3.1400008}
+  m_LocalRotation: {x: -0.38984063, y: 0.13787277, z: -0.05915738, w: -0.90857905}
+  m_LocalPosition: {x: 6.073591, y: 12.023305, z: -15.529593}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1207,7 +1217,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &1034354942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,13 +1230,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6a51660826c443b6a2845ec53df10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  layer:
-    serializedVersion: 2
-    m_Bits: 8
+  attackForce: 3
+  backForce: 3
+  movementSpeed: 4
+  maxScale: 8
   checkIsGround: 0
   isDestroyed: 0
   score: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!23 &1034354943
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1284,7 +1297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034354938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.46, y: 0.729, z: 6.36}
+  m_LocalPosition: {x: 6.8, y: 0.729, z: 4.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1695,7 +1708,7 @@ Transform:
   m_GameObject: {fileID: 1191658914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 40, y: 0.2, z: 40}
+  m_LocalScale: {x: 60, y: 0.2, z: 60}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1772,7 +1785,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &1243201865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,13 +1798,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6a51660826c443b6a2845ec53df10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  layer:
-    serializedVersion: 2
-    m_Bits: 8
+  attackForce: 3
+  backForce: 3
+  movementSpeed: 4
+  maxScale: 8
   checkIsGround: 0
   isDestroyed: 0
   score: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!23 &1243201866
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1849,7 +1865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243201861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.12, y: 0.729, z: 0.67}
+  m_LocalPosition: {x: -7.6, y: 0.729, z: -20.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2039,7 +2055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostPrefab: {fileID: 3097094480511810973, guid: 93afe935750a1fa4db2d79042f3c88ba, type: 3}
-  radius: 20
+  radius: 30
   firstSpawnCount: 10
   boostList: []
 --- !u!4 &1440412438
@@ -2368,7 +2384,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &1620745792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,13 +2397,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6a51660826c443b6a2845ec53df10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  layer:
-    serializedVersion: 2
-    m_Bits: 8
+  attackForce: 3
+  backForce: 3
+  movementSpeed: 4
+  maxScale: 8
   checkIsGround: 0
   isDestroyed: 0
   score: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!23 &1620745793
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2445,7 +2464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620745788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.95, y: 0.729, z: 15.71}
+  m_LocalPosition: {x: 2.1, y: 0.729, z: 22.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2573,7 +2592,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &2124069447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2586,13 +2605,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6a51660826c443b6a2845ec53df10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  layer:
-    serializedVersion: 2
-    m_Bits: 8
+  attackForce: 3
+  backForce: 3
+  movementSpeed: 4
+  maxScale: 8
   checkIsGround: 0
   isDestroyed: 0
   score: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!23 &2124069449
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2650,7 +2672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124069445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.91, y: 0.729, z: -9.63}
+  m_LocalPosition: {x: 11.98, y: 0.729, z: -23.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

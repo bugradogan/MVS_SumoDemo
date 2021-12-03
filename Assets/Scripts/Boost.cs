@@ -1,19 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Boost : MonoBehaviour
 {
-    [SerializeField] float rotationSpeed = 2f;   
-    
-   
+    // Rotation speed for Boost object
+    [SerializeField] float rotationSpeed = 2f;
+
     void Update()
     {
+        // Rotation Boost object
         transform.Rotate(new Vector3(0f, rotationSpeed, 0f));
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        // If player collect boost
         if (other.CompareTag("Player"))
         {
             other.GetComponent<Player>().Scale();
@@ -21,7 +21,7 @@ public class Boost : MonoBehaviour
             other.GetComponent<Player>().RemoveTarget(gameObject);
             Destroy(gameObject);
         }
-        else if (other.CompareTag("AI"))
+        else if (other.CompareTag("AI"))  // If AI collect boost
         {
             other.GetComponent<EnemyAI>().Scale();
             other.GetComponent<EnemyAI>().InreaseScore();
@@ -29,4 +29,5 @@ public class Boost : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }
